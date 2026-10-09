@@ -16,5 +16,4 @@ A retro desktop calculator inspired by the classic **Casio C-80**, developed usi
 - **JavaFX**: 21.0.6
 - **Build Tool**: Maven
 
-## 🤝 Some shameless self-promotion
-Developed with the support of **Gemini** (Google AI) as a programming and CSS design co-pilot.
+## Developed with the support of **Gemini** (Google AI) as a programming and CSS design co-pilot.
