@@ -1,0 +1,81 @@
+/* --- CUERPO GENERAL DE LA CALCULADORA (Casio Resin Body) --- */
+.root {
+    -fx-background-color: #1e2227;
+    -fx-padding: 15px;
+}
+
+/* --- PANTALLA LCD (Verde oliva vintage) --- */
+#txtDisplay {
+    -fx-background-color: #9ea885;
+    -fx-text-fill: #1a2215;
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-alignment: center-right;
+    -fx-border-color: #586146;
+    -fx-border-width: 3px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-padding: 5px 10px;
+
+    /* Tono atenuado para simular segmentos LCD apagados */
+    -fx-prompt-text-fill: rgba(26, 34, 21, 0.25);
+
+    /* Elimina el borde azul por defecto al enfocar */
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+#txtDisplay:focused {
+    -fx-prompt-text-fill: rgba(26, 34, 21, 0.25);
+}
+
+/* --- ESTILO BASE PARA TODOS LOS BOTONES --- */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4a5058, #353a40);
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 4px;
+    -fx-border-color: #22262a;
+    -fx-border-radius: 4px;
+    -fx-border-width: 1px;
+    -fx-cursor: hand;
+}
+
+/* Efecto al pasar el cursor o presionar */
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #5a616b, #434952);
+}
+
+.button:pressed {
+    -fx-background-color: #22262a;
+    -fx-text-fill: #cccccc;
+}
+
+/* --- BOTÓN DE LIMPIAR 'C' (Detalle rojo vintage) --- */
+.btn-clear {
+    -fx-background-color: linear-gradient(to bottom, #c0392b, #962d22) !important;
+    -fx-text-fill: white !important;
+}
+
+.btn-clear:hover {
+    -fx-background-color: linear-gradient(to bottom, #e74c3c, #c0392b) !important;
+}
+
+/* --- BOTÓN DE IGUAL '=' (Resaltado amarillo/naranja) --- */
+.btn-equals {
+    -fx-background-color: linear-gradient(to bottom, #d35400, #a04000) !important;
+    -fx-text-fill: white !important;
+}
+
+.btn-equals:hover {
+    -fx-background-color: linear-gradient(to bottom, #e67e22, #d35400) !important;
+}
+
+/* --- BOTONES DE NAVEGACIÓN LATERAL (< y >) --- */
+.btn-nav {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1a252f);
+    -fx-font-size: 16px;
+}
